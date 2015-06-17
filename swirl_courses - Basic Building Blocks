@@ -7,20 +7,24 @@
     to R, you can type help.start() at the prompt, which will open a menu of resources
     (either within RStudio or your default web browser, depending on your setup).
     Alternatively, a simple web search often yields the answer you're looking for.
+    
 - Class: cmd_question
   Output: In its simplest form, R can be used as an interactive calculator. Type
     5 + 7 and press Enter.
   CorrectAnswer: 5 + 7
   AnswerTests: omnitest(correctExpr='5 + 7')
   Hint: Type 5 + 7 and press Enter.
+  
 - Class: text
   Output: R simply prints the result of 12 by default. However, R is a programming
     language and often the reason we use a programming language as opposed to a calculator
     is to automate some process or avoid unnecessary repetition.
+    
 - Class: text
   Output: In this case, we may want to use our result from above in a second calculation.
     Instead of retyping 5 + 7 every time we need it, we can just create a new variable
     that stores the result.
+    
 - Class: text
   Output: 'The way you assign a value to a variable in R is by using the assignment
     operator, which is just a ''less than'' symbol followed by a ''minus'' sign. It
@@ -49,6 +53,7 @@
   CorrectAnswer: x
   AnswerTests: omnitest(correctExpr='x')
   Hint: Type x and press Enter. This will automatically print the value of x.
+  
 - Class: cmd_question
   Output: Now, store the result of x - 3 in a new variable called y.
   CorrectAnswer: y <- x - 3
@@ -56,11 +61,13 @@
   Hint: Type y <- x - 3 and press Enter. Whether you use x - 3 or x-3 is personal
     preference, but it's good habit to include a space on either side of the assignment
     operator.
+    
 - Class: cmd_question
   Output: What is the value of y? Type y to find out.
   CorrectAnswer: 'y'
   AnswerTests: omnitest(correctExpr='y')
   Hint: Type y and press Enter.
+  
 - Class: text
   Output: Now, let's create a small collection of numbers called a vector. Any object
     that contains data is called a data structure and numeric vectors are the simplest
@@ -153,6 +160,7 @@
   Hint: Enter my_div <- z / my_sqrt. The spaces on either side of the `/` sign are not
     required, but can often improve readability by making code appear less cluttered.
     In the end, it's personal preference.
+    
 - Class: mult_question
   Output: Which statement do you think is true?
   CorrectAnswer: The first element of my_div is equal to the first element of z divided
@@ -163,19 +171,23 @@
   AnswerTests: omnitest(correctVal='The first element of my_div is equal to the first
     element of z divided by the first element of my_sqrt, and so on...')
   Hint: Think about how R handled the other 'vectorized' operations like `+` and `*`.
+  
 - Class: cmd_question
   Output: Go ahead and print the contents of my_div.
   CorrectAnswer: my_div
   AnswerTests: omnitest(correctExpr='my_div')
   Hint: Type my_div and press Enter to see its contents.
+  
 - Class: text
   Output: When given two vectors of the same length, R simply performs the specified
     arithmetic operation (`+`, `-`, `*`, etc.) element-by-element. If the vectors
     are of different lengths, R 'recycles' the shorter vector until it is the same
     length as the longer vector.
+    
 - Class: text
   Output: When we did z * 2 + 100 in our earlier example, z was a vector of length
     3, but technically 2 and 100 are each vectors of length 1.
+    
 - Class: text
   Output: 'Behind the scenes, R is ''recycling'' the 2 to make a vector of 2s and
     the 100 to make a vector of 100s. In other words, when you ask R to compute z
@@ -201,6 +213,7 @@
   Hint: Type c(1, 2, 3, 4) + c(0, 10, 100) to see how R handles adding two vectors,
     when the shorter vector's length does not divide evenly into the longer vector's
     length. Don't worry about assigning the result to a variable.
+    
 - Class: text
   Output: Before concluding this lesson, I'd like to show you a couple of time-saving tricks.
 
