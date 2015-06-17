@@ -4,7 +4,7 @@
 - Class: cmd_question
   Output: The simplest way to create a sequence of numbers in R is by using the `:`
     operator. Type 1:20 to see how it works.
-  CorrectAnswer: '1:20'
+  CorrectAnswer: 1:20
   AnswerTests: omnitest(correctExpr='1:20')
   Hint: Type 1:20 with no spaces. Make sure to use a regular colon and NOT a semi-colon.
 
@@ -23,7 +23,7 @@
 
 - Class: cmd_question
   Output: 'What happens if we do 15:1? Give it a try to find out.'
-  CorrectAnswer: '15:1'
+  CorrectAnswer: 15:1
   AnswerTests: omnitest(correctExpr='15:1')
   Hint: Type 15:1 and press Enter.
 
