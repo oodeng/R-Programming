@@ -1,0 +1,31 @@
+| This lesson is meant to be a short
+| introduction to logical operations in R
+...
+
+| There are two logical values in R, also
+| called boolean values. They are TRUE and
+| FALSE. In R you can construct logical
+| expressions which will evaluate to either
+| TRUE or FALSE.
+...
+
+| Many of the questions in this lesson will
+| involve evaluating logical expressions.
+| It may be useful to open up a second R
+| terminal where you can experiment with
+| some of these expressions.
+...
+
+| Creating logical expressions requires
+| logical operators. You're probably
+| familiar with arithmetic operators like
+| `+`, `-`, `*`, and `/`. The first logical
+| operator we are going to discuss is the
+| equality operator, represented by two
+| equals signs `==`. Use the equality
+| operator below to find out if TRUE is
+| equal to TRUE.
+...
+ correct answer : TRUE == TRUE
+
+
